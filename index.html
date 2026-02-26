@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+        .carre1{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .c1{
+            width: 50px;
+            height: 50px;
+            background-color: rgb(0, 4, 255);
+            transition: transform 5s ease; 
+
+           
+        }
+        .c1:hover {
+            width: 150px;
+            height: 100px;
+            transform: translateX(100px); 
+            background-color: green;
+            
+        }
+        .carre2{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(255, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .c2{
+            width: 50px;
+            height: 50px;
+            background-color: rgb(0, 0, 0);
+            transition: transform 3s ease ; 
+            border-radius: 100%;
+        }
+        .c2:hover {
+            transform: translateX(-200px);   
+        }
+        .carre3 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .c7 {
+            height: 50px;
+            width: 50px;
+            background-color: green;
+            transition: transform infinite ease;
+            
+        }
+        .c7:hover {
+            background-color: yellow;
+            animation: rota 5s linear infinite;
+           
+        }
+         @keyframes rota {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(3600deg);
+            }
+            
+            
+        
+        
+            
+            
+}
+    </style>
+</head>
+<body>
+<div class="carre1">
+    <div class="c1"></div>
+</div>
+<div class="carre2">
+    <div class="c2"></div>
+</div>
+<div class="carre3">
+    <div class="c7"></div>
+</div>
+</body>
+</html>
